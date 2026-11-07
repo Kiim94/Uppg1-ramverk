@@ -1,0 +1,42 @@
+.my-button {
+    width: 200px;
+}
+
+body{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 2rem;
+}
+#navbar {
+    ul {
+        display: flex;
+        align-items: end;
+        gap: 5px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 3px solid purple;
+        .tab {
+            display: block;
+            padding: 2rem 1rem;
+            text-decoration: none;
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: 0.2s ease;
+            &:hover{
+                background:plum;
+                color: black;
+            }
+            &.active{
+                background:purple;
+                color:white;
+                font-weight:bold;
+            }
+        }
+    }
+}
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}

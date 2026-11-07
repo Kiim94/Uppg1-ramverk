@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link ref="stylesheet" href="/src/style.scss">
+  <title>uppgift-1</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html" class="tab">Hem</a></li>
+      <li><a href="ramverk1.html" class="tab">Ramverk 1</a></li>
+      <li><a href="ramverk2.html" class="tab active">Ramverk 2</a></li>
+      <li><a href="publish.html" class="tab">Publicering</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1 class="text-3xl font-bold underline">Ramverk 2: Milligram</h1>
+    https://milligram.io/#getting-started
+    <p>En undersida med information om ramverket, med länk till ramverkets webbplats.</p>
+    <p>Sidan ska också innehålla en utvärdering av ramverket, ta med saker som för- och nackdelar och dina upplevelser
+      av
+      att arbeta med ramverket.</p>
+    <p>Det ska finnas en tabell ett formulär (läs mer info nedan).</p>
+    
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h3>Fördelar</h3>
+            <ul>
+              <li>Väldigt enkelt att använda: bara börja skriva HTML efter att Milligram har blivit inkluderat i
+                projektet.</li>
+              <li>Om man inte vill behöver man inte använda någon specifik CSS då färdig css finns när man börjar
+                programmera.</li>
+              <li>Då ramverket är flexbox-baserad är det enkelt att skapa responsiva layouter.</li>
+              <li>Även grid är enkelt att implementera och använda. Dessa för- och nackdelar är uppdelade med hjälp av
+                en container, en row samt två kolumner.</li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3>Nackdelar</h3>
+            <ul>
+              <li>Det finns inga mer avancerade funktioner än de som redan finns. Så inga karuseller, dragspel eller
+                navigeringsmenyer finns färdiga att implementera.</li>
+              <li>Det verkar uppdateras långsamt (senaste uppdateringen var 2020)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Titel</th>
+              <th>Författare</th>
+              <th>Genre</th>
+              <th>Utgivningsår</th>
+              <th>Beskrivning</th>
+              <th>Känslor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Harry Potter</td>
+              <td>J.K. Rowling</td>
+              <td>Fantasy</td>
+              <td>1997</td>
+              <td>Den episka historien om en pojkesom upptäcker att han är en trollkarl.</td>
+              <td>Spännande, Rolig</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Lord of the Rings</td>
+              <td>J.R.R. Tolkein</td>
+              <td>Fantasy</td>
+              <td>1954</td>
+              <td>Om en hobbit och hans äventyr långt från hemmets trygga vrå.</td>
+              <td>Svårläst, Spännande</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Stolthet och fördom</td>
+              <td>Jane Austen</td>
+              <td>Klassiker</td>
+              <td>1813</td>
+              <td>En klassisk roman om kärlek och samhällsstrukturer.</td>
+              <td>Tråkig</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>En man som heter Ove</td>
+              <td>Fredrik Backman</td>
+              <td>Roman</td>
+              <td>2012</td>
+              <td>En berättelse om ett liv som är fullt av mening och kärlek.</td>
+              <td>Inspirerande, Sorglig</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>Somewhere beyond the sea</td>
+              <td>TJ Klune</td>
+              <td>Fantasy</td>
+              <td>2024</td>
+              <td>Fortsättningen på berättelsen om Arthur och Linus och deras arbete med barnhemmet med
+                magiska barn.</td>
+              <td>Känslosam</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <form>
+      <fieldset>
+        <div>
+          <label for="exampleTitle">Titel</label>
+          <input type="text" id="exampleTitle" required>
+          <div>Skriv in titeln på boken</div>
+        </div>
+
+        <div>
+          <label for="exampleAuthor">Författare</label>
+          <input type="text" id="exampleAuthor" required>
+          <div>Skriv in författarens namn</div>
+        </div>
+
+        <div>
+          <label for="exampleGenre">Genre</label>
+          <select id="exampleGenre" required>
+            <option selected disabled>Välj en genre...</option>
+            <option>Fantasy</option>
+            <option>Roman</option>
+            <option>Romantik</option>
+            <option>Äventyr</option>
+            <option>Klassiker</option>
+            <option>Skräck</option>
+            <option>Dystopi</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="exampleDescription">Beskrivning</label>
+          <textarea id="exampleDescription"></textarea>
+          <div>Skriv en kort beskrivning av boken</div>
+        </div>
+
+        <div>
+          <label>Vad tyckte du om boken?</label>
+          <div class="checkbox-group">
+            <label for="emotional">Känslosam</label>
+            <input id="emotional" type="checkbox">
+
+            <label for="exciting">Spännande</label>
+            <input type="checkbox" id="exciting">
+
+            <label for="sad">Sorglig</label>
+            <input id="sad" type="checkbox">
+
+            <label for="inspiring">Inspirerande</label>
+            <input type="checkbox" id="inspiring">
+
+            <label for="boring">Tråkig</label>
+            <input id="boring" type="checkbox">
+
+            <label for="confusing">Förvirrande</label>
+            <input type="checkbox" id="confusing">
+          </div>
+        </div>
+
+        </div>
+        <div>
+          <button type="submit" style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+
+  <div id="app"></div>
+  <script type="module" src="/src/milligram.js"></script>
+</body>
+
+</html>
