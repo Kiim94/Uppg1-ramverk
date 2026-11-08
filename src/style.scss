@@ -5,6 +5,7 @@
 html{
     font-size:16px;
     line-height:1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main{
@@ -48,7 +49,25 @@ main{
         }
     }
 }
-
+.milligram-table{
+    border-collapse:collapse;
+    width:100%;
+    color:black;
+    th, td{
+        border:1px solid purple;
+        padding:2rem;
+    }
+    tbody td:first-child, thead th:first-child{
+        text-align:center;
+        padding:1rem;
+    }
+    tbody tr:nth-child(even){
+        background-color: rgba(148, 99, 146, 0.719);
+    }
+    tbody tr:nth-child(odd){
+        background-color:rgba(216, 177, 216, 0.63);
+    }
+}
 //gruppera checkboxarna, check-item grupperar checkbox + label tillsammans så de inte hamnar på varsinn rad 
 .checkbox-group{
     display:flex;
@@ -79,13 +98,16 @@ main{
     border-bottom:3px solid indigo;
     ul{
         display:flex;
-        flex-wrap:wrap;
+        flex-wrap:nowrap;
         gap:1rem;
         list-style-type:none;
+        margin:0;
+        padding:0;
         li a{
+            display:block;
             font-size:1.2rem;
             text-decoration:none;
-            padding:1.3rem 1rem;
+            padding:1rem 1rem;
             transition:0.2s ease;
             &:hover{
                 background:plum;
