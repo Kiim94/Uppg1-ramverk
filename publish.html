@@ -1,21 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>uppgift-1</title>
-  </head>
-  <body>
-    <nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uppgift-1</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-no-framework">
       <ul>
         <li><a href="index.html">Hem</a></li>
         <li><a href="ramverk1.html">Ramverk 1</a></li>
         <li><a href="ramverk2.html">Ramverk 2</a></li>
-        <li><a href="publish.html">Publicering</a></li>
+        <li><a href="publish.html" class="active">Publicering</a></li>
       </ul>
     </nav>
-    <h1>Publicering</h1>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  </header>
+
+  <main>
+    <h1>Publicering på Netlify</h1>
+    <p>Jag har valt att publicera denna webbplats till Netlify. Framförallt för att jag har använt den tidigare och
+      därmed känner till den lite bättre än andra. Men även för att öva mer med den då jag hittills har mest använt
+      GitHub Pages.</p>
+
+    <div class="publish-container">
+      <div class="column">
+        <h2>Språk</h2>
+        <p>Netlify stödjer väldigt många olika språk, som HTML, CSS, JavaScript, TypeScript, PHP och många andra.</p>
+        <p>Det gör den perfekt för den som använder många av dessa programmeringsspråk, men också för den som inte vill
+          göra en flerspråkig webbplats.</p>
+      </div>
+      <div class="column">
+        <h2>Kostnad</h2>
+        <p>Medan Netlify är till stor del gratis att använda så finns det även möjlighet att betala för att få tillgång
+          till fler funktioner.</p>
+      </div>
+      <div class="column">
+        <h2>Storlek</h2>
+        <p>Det finns en gräns för hur stora filer får vara för att kunna laddas upp till Netlify. Maximal filstorlek är
+          256 MB, men för mindre webbplatser är det inte så vanligt att gå över den gränsen.</p>
+      </div>
+    </div>
+
+    <div class="publish-container">
+      <div class="pro-cons pro">
+        <h3>Fördelar</h3>
+        <ul>
+          <li>Det är enkelt att använda: om du redan vet hur du skapar ett repo i GitHub kan du koppla det till Netlify: 
+            varje gång du pushar en förändring så kommer det automatiskt att uppdatera webbplatsen som du har i Netlify.</li>
+            <li>Du får snabb återkoppling när något inte fungerar vid start av webbplats eller liknande.</li>
+            <li>Du kan även förhandsgranska innan förändringar blir live.</li>
+        </ul>
+      </div>
+      <div class="pro-cons cons">
+        <h3>Nackdelar</h3>
+        <ul>
+          <li>Som tidigare nämnt, det är inte gratis om du vill A: ha stora filer eller B: använda mer avancerade
+            funktioner.</li>
+            <li>Om trafiken till webbplatsen plötsligt skjuter i höjden kan resurser för denna månad ta slut. 
+              Har du betalversionen kan du även få oväntade höga avgifter.</li>
+        </ul>
+      </div>
+    </div>
+
+    <ul>
+      <li>Ta med saker som kod-stöd (vilka programmerings-språk som går att använda),</li>
+      <li>kostnad,</li>
+      <li>för- och nackdelar</li>
+      <li>och andra saker du tycker är utmärkande.</li>
+      <li>Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</li>
+    </ul>
+
+  </main>
+
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

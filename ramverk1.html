@@ -8,15 +8,16 @@
 </head>
 
 <body>
-
-    <nav>
-        <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
-            <li class="nav-item"><a class="nav-link active" href="ramverk1.html">Ramverk 1</a></li>
-            <li class="nav-item"><a class="nav-link" href="ramverk2.html">Ramverk 2</a></li>
-            <li class="nav-item"><a class="nav-link" href="publish.html">Publicering</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+                <li class="nav-item"><a class="nav-link active" href="ramverk1.html">Ramverk 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="ramverk2.html">Ramverk 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="publish.html">Publicering</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="container my-5">
         <header class="mb-5">
             <h1>Ramverk 1: Bootstrap</h1>
@@ -52,6 +53,7 @@
         </section>
 
         <section class="mb-5">
+            <h2>Tabell</h2>
             <div class="table-responsive table-card">
                 <table class="table table-striped table-hover">
                     <thead>
@@ -117,7 +119,7 @@
             </div>
         </section>
         <h2>Formulär</h2>
-        <form>
+        <form class="mb-5" style="padding:2rem; border: 1px solid #ccc; border-radius:10px; margin-top:1rem;">
             <fieldset class="mb-3">
 
                 <div class="form-field mb-3">
@@ -155,47 +157,45 @@
                 <div class="mb-3">
                     <label class="form-label">Vad tyckte du om boken?</label>
                     <div class="d-flex flex-wrap gap-3">
-                        <label class="form-label" for="emotional">Känslosam</label>
-                        <input id="emotional" type="checkbox" class="check">
+                        <div>
+                            <label class="form-label" for="emotional">Känslosam</label>
+                            <input id="emotional" type="checkbox" class="check">
+                        </div>
 
-                        <label class="form-label" for="exciting">Spännande</label>
-                        <input type="checkbox" id="exciting" class="check">
-
-                        <label class="form-label" for="sad">Sorglig</label>
-                        <input id="sad" type="checkbox" class="check">
-
-                        <label class="form-label" for="inspiring">Inspirerande</label>
-                        <input type="checkbox" id="inspiring" class="check">
-
-                        <label class="form-label" for="boring">Tråkig</label>
-                        <input id="boring" type="checkbox" class="check">
-
-                        <label class="form-label" for="confusing">Förvirrande</label>
-                        <input type="checkbox" id="confusing" class="check">
+                        <div>
+                            <label class="form-label" for="exciting">Spännande</label>
+                            <input type="checkbox" id="exciting" class="check">
+                        </div>
+                        <div>
+                            <label class="form-label" for="sad">Sorglig</label>
+                            <input id="sad" type="checkbox" class="check">
+                        </div>
+                        <div>
+                            <label class="form-label" for="inspiring">Inspirerande</label>
+                            <input type="checkbox" id="inspiring" class="check">
+                        </div>
+                        <div>
+                            <label class="form-label" for="boring">Tråkig</label>
+                            <input id="boring" type="checkbox" class="check">
+                        </div>
+                        <div>
+                            <label class="form-label" for="confusing">Förvirrande</label>
+                            <input type="checkbox" id="confusing" class="check">
+                        </div>
                     </div>
                 </div>
 
                 </div>
                 <div class="form-field mb-3">
-                    <button type="submit" class="btn-outline theme-primary send-button" style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
+                    <button type="submit" class="btn-outline theme-primary send-button"
+                        style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
                 </div>
 
             </fieldset>
         </form>
-        <p>Sidan ska också innehålla en utvärdering av ramverket, ta med saker som för- och nackdelar och
-            dina upplevelser av att arbeta med ramverket.</p>
-        <p>Det ska finnas en tabell ett formulär (läs mer info nedan).</p>
-
-        <p>Tabellerna på undersidorna för ramverk 1 och 2 ska innehålla minst fyra fält och minst 5 rader med data, där
-            fältnamn (titlar) ska vara tydligt utmärkta (använd thead i tabellen för detta).</p>
-
-
-        <p>Formulären på undersidorna för ramverk 1 och 2 ska vara konstruerade på sånt sätt att de skulle kunna
-            användas för att lagra data till ovanstående tabell.</p>
-        <p>Det som minimum ska finnas med i formuläret är input-fält, textarea, checkbox, och select-lista.
-            Det ska även finnas en submit-knapp.</p>
+        <div id="app"></div>
     </main>
-    <div id="app"></div>
+
     <script type="module" src="/src/bootstrap.js"></script>
 </body>
 

@@ -9,23 +9,22 @@
 </head>
 
 <body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="index.html" class="tab">Hem</a></li>
-      <li><a href="ramverk1.html" class="tab">Ramverk 1</a></li>
-      <li><a href="ramverk2.html" class="tab active">Ramverk 2</a></li>
-      <li><a href="publish.html" class="tab">Publicering</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html" class="tab">Hem</a></li>
+        <li><a href="ramverk1.html" class="tab">Ramverk 1</a></li>
+        <li><a href="ramverk2.html" class="tab active">Ramverk 2</a></li>
+        <li><a href="publish.html" class="tab">Publicering</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
     <h1 class="text-3xl font-bold underline">Ramverk 2: Milligram</h1>
-    https://milligram.io/#getting-started
-    <p>En undersida med information om ramverket, med länk till ramverkets webbplats.</p>
-    <p>Sidan ska också innehålla en utvärdering av ramverket, ta med saker som för- och nackdelar och dina upplevelser
-      av
-      att arbeta med ramverket.</p>
-    <p>Det ska finnas en tabell ett formulär (läs mer info nedan).</p>
-    
+    <p>Denna sida har använt Milligram som ramverk. Dokumentation finns på : <a
+        href="https://milligram.io/#getting-started" target="_blank">Milligram Documentation</a></p>
+    <section>
       <div class="container">
         <div class="row">
           <div class="column">
@@ -54,6 +53,7 @@
     </section>
 
     <section class="table-section">
+      <h2>Tabell</h2>
       <div>
         <table>
           <thead>
@@ -118,74 +118,91 @@
         </table>
       </div>
     </section>
-
-    <form>
-      <fieldset>
-        <div>
-          <label for="exampleTitle">Titel</label>
-          <input type="text" id="exampleTitle" required>
-          <div>Skriv in titeln på boken</div>
-        </div>
-
-        <div>
-          <label for="exampleAuthor">Författare</label>
-          <input type="text" id="exampleAuthor" required>
-          <div>Skriv in författarens namn</div>
-        </div>
-
-        <div>
-          <label for="exampleGenre">Genre</label>
-          <select id="exampleGenre" required>
-            <option selected disabled>Välj en genre...</option>
-            <option>Fantasy</option>
-            <option>Roman</option>
-            <option>Romantik</option>
-            <option>Äventyr</option>
-            <option>Klassiker</option>
-            <option>Skräck</option>
-            <option>Dystopi</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="exampleDescription">Beskrivning</label>
-          <textarea id="exampleDescription"></textarea>
-          <div>Skriv en kort beskrivning av boken</div>
-        </div>
-
-        <div>
-          <label>Vad tyckte du om boken?</label>
-          <div class="checkbox-group">
-            <label for="emotional">Känslosam</label>
-            <input id="emotional" type="checkbox">
-
-            <label for="exciting">Spännande</label>
-            <input type="checkbox" id="exciting">
-
-            <label for="sad">Sorglig</label>
-            <input id="sad" type="checkbox">
-
-            <label for="inspiring">Inspirerande</label>
-            <input type="checkbox" id="inspiring">
-
-            <label for="boring">Tråkig</label>
-            <input id="boring" type="checkbox">
-
-            <label for="confusing">Förvirrande</label>
-            <input type="checkbox" id="confusing">
+    <section>
+      <h2>Formulär</h2>
+      <form style="padding:2rem; border:1px solid #ccc; border-radius:10px; margin-top:1rem;">
+        <fieldset>
+          <div>
+            <label for="exampleTitle">Titel</label>
+            <input type="text" id="exampleTitle" required>
+            <div>Skriv in titeln på boken</div>
           </div>
-        </div>
 
-        </div>
-        <div>
-          <button type="submit" style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
-        </div>
+          <div>
+            <label for="exampleAuthor">Författare</label>
+            <input type="text" id="exampleAuthor" required>
+            <div>Skriv in författarens namn</div>
+          </div>
 
-      </fieldset>
-    </form>
+          <div>
+            <label for="exampleGenre">Genre</label>
+            <select id="exampleGenre" required>
+              <option selected disabled>Välj en genre...</option>
+              <option>Fantasy</option>
+              <option>Roman</option>
+              <option>Romantik</option>
+              <option>Äventyr</option>
+              <option>Klassiker</option>
+              <option>Skräck</option>
+              <option>Dystopi</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="exampleDescription">Beskrivning</label>
+            <textarea id="exampleDescription"></textarea>
+            <div>Skriv en kort beskrivning av boken</div>
+          </div>
+
+          <div>
+            <label>Vad tyckte du om boken?</label>
+            <div class="checkbox-group">
+
+              <div class="check-item">
+                <label for="emotional">Känslosam</label>
+                <input id="emotional" type="checkbox">
+              </div>
+
+              <div class="check-item">
+                <label for="exciting">Spännande</label>
+                <input type="checkbox" id="exciting">
+              </div>
+
+              <div class="check-item">
+                <label for="sad">Sorglig</label>
+                <input id="sad" type="checkbox">
+              </div>
+
+              <div class="check-item">
+                <label for="inspiring">Inspirerande</label>
+                <input type="checkbox" id="inspiring">
+              </div>
+
+              <div class="check-item">
+                <label for="boring">Tråkig</label>
+                <input id="boring" type="checkbox">
+              </div>
+
+              <div class="check-item">
+                <label for="confusing">Förvirrande</label>
+                <input type="checkbox" id="confusing">
+              </div>
+
+            </div>
+          </div>
+
+          </div>
+          <div>
+            <button type="submit" style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+    <div id="app"></div>
   </main>
 
-  <div id="app"></div>
+
   <script type="module" src="/src/milligram.js"></script>
 </body>
 
