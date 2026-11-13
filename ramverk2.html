@@ -24,10 +24,11 @@
     <h1 class="text-3xl font-bold underline">Ramverk 2: Milligram</h1>
     <p>Denna sida har använt Milligram som ramverk. Dokumentation finns på : <a
         href="https://milligram.io/#getting-started" target="_blank">Milligram Documentation</a></p>
+        <p>Viss extra SCSS har använts för att göra sidan mer användbar/tilltalande.</p>
     <section>
-      <div class="container">
-        <div class="row">
-          <div class="column">
+      <div class="container milli">
+        <div class="row milli">
+          <div class="column pos">
             <h3>Fördelar</h3>
             <ul>
               <li>Väldigt enkelt att använda: bara börja skriva HTML efter att Milligram har blivit inkluderat i
@@ -40,12 +41,13 @@
             </ul>
           </div>
 
-          <div class="column">
+          <div class="column neg">
             <h3>Nackdelar</h3>
             <ul>
               <li>Det finns inga mer avancerade funktioner än de som redan finns. Så inga karuseller, dragspel eller
                 navigeringsmenyer finns färdiga att implementera.</li>
               <li>Det verkar uppdateras långsamt (senaste uppdateringen var 2020)</li>
+              <li>Vill man styla får man använda css för att manuellt göra detta (t.ex. ändra färg, animationer, rundade hörn)</li>
             </ul>
           </div>
         </div>
@@ -116,7 +118,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section style="padding:0 4rem;">
       <h2>Formulär</h2>
       <form style="padding:2rem; border:1px solid #ccc; border-radius:10px; margin-top:1rem;">
         <fieldset>
@@ -191,7 +193,7 @@
 
           </div>
           <div>
-            <button type="submit" style="width:10rem; display:block; margin: 0 auto;">Skicka</button>
+            <button type="submit" class="button">Skicka</button>
           </div>
 
         </fieldset>

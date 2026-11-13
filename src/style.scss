@@ -1,18 +1,18 @@
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-html{
-    font-size:16px;
-    line-height:1.5;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:1.5rem;
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
 
 .my-button {
@@ -22,131 +22,172 @@ main{
 //navigerings-meny för Milligram
 #navbar {
     border-bottom: 3px solid purple;
+
     ul {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         align-items: end;
         gap: 5px;
         list-style: none;
         padding: 0;
         margin: 0;
+
         .tab {
             display: block;
             padding: 2rem 1rem;
             text-decoration: none;
             border-radius: 1.5rem 1.5rem 0 0;
             transition: 0.2s ease;
-            margin-bottom:-10px;
-            &:hover{
-                background:plum;
+            margin-bottom: -10px;
+
+            &:hover {
+                background: plum;
                 color: black;
             }
-            &.active{
-                background:purple;
-                color:white;
-                font-weight:bold;
+
+            &.active {
+                background: purple;
+                color: white;
+                font-weight: bold;
             }
         }
     }
 }
-.milligram-table{
-    border-collapse:collapse;
-    width:100%;
-    color:black;
-    th, td{
-        border:1px solid purple;
-        padding:2rem;
+
+.milligram-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+
+    th,
+    td {
+        border: 1px solid purple;
+        padding: 2rem;
     }
-    tbody td:first-child, thead th:first-child{
-        text-align:center;
-        padding:1rem;
+
+    tbody td:first-child,
+    thead th:first-child {
+        text-align: center;
+        padding: 1rem;
     }
-    tbody tr:nth-child(even){
+
+    tbody tr:nth-child(even) {
         background-color: rgba(148, 99, 146, 0.719);
     }
-    tbody tr:nth-child(odd){
-        background-color:rgba(216, 177, 216, 0.63);
-    }
-}
-//gruppera checkboxarna, check-item grupperar checkbox + label tillsammans så de inte hamnar på varsinn rad 
-.checkbox-group{
-    display:flex;
-    flex-wrap:wrap;
-    gap:1.5rem;
-    .check-item{
-        display:flex;
-        align-items:center;
-        gap:0.5rem;
+
+    tbody tr:nth-child(odd) {
+        background-color: rgba(216, 177, 216, 0.63);
     }
 }
 
-//container för publicerings-sidan
-.publish-container{
-    display:flex;
-    flex-direction:row;
-    gap:2rem;
+//gruppera checkboxarna, check-item grupperar checkbox + label tillsammans så de inte hamnar på varsinn rad 
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .check-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.container.milli{
+    border-radius:20px;
+    padding:0;
+    overflow:hidden;
+    color:rgb(46, 45, 45);  
+    border:2px solid black;
+    margin-bottom:2rem;
+    
     .column{
-        flex:1;
-        margin:1rem 0;
-        padding:1rem;
-        border:1px solid black;
+        padding:2rem;
+    }
+    }
+    .pos {
+        background-color: lightgreen;
+    }
+    .neg {
+        background-color: salmon;
+}
+
+//container för publicerings-sidan
+.publish-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .column {
+        flex: 1;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 1px solid black;
     }
 }
 
 //nav-meny för sidor utan framework.
-.nav-no-framework{
-    border-bottom:3px solid indigo;
-    ul{
-        display:flex;
-        flex-wrap:nowrap;
-        gap:1rem;
-        list-style-type:none;
-        margin:0;
-        padding:0;
-        li a{
-            display:block;
-            font-size:1.2rem;
-            text-decoration:none;
-            padding:1rem 1rem;
-            transition:0.2s ease;
-            &:hover{
-                background:plum;
-                color:white;
+.nav-no-framework {
+    border-bottom: 3px solid indigo;
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li a {
+            display: block;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 1rem 1rem;
+            transition: 0.2s ease;
+
+            &:hover {
+                background: plum;
+                color: white;
             }
-            &.active{
-                background:indigo;
-                color:white;
-                font-weight:bold;
+
+            &.active {
+                background: indigo;
+                color: white;
+                font-weight: bold;
             }
         }
     }
 }
 
-.pro-cons{
-    flex:1;
-    padding:1rem;
-    border-radius:20px;
-    &.pro{
-        background:#e8f5e9;
-        border:2px dashed green;
+.pro-cons {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 20px;
+
+    &.pro {
+        background: #e8f5e9;
+        border: 2px dashed green;
     }
-    &.cons{
-        background:#ffebee;
+
+    &.cons {
+        background: #ffebee;
         border: 2px dashed red;
     }
 }
 
-@media (max-width: 768px){
-    html{
-        font-size:15px;
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
     }
-    .publish-container{
-        flex-direction:column;
+
+    .publish-container {
+        flex-direction: column;
         margin: 0 auto;
     }
 }
-@media (max-width: 480px){
-    html{
-        font-size:14px;
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
     }
 }
