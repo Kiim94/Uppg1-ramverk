@@ -14,4 +14,4 @@ medan Milligram valdes dels för att den (för mig) varit okänd tills denna upp
 ## Webbplats
 [Uppgift-1](https://uppg1-ramverk.netlify.app/)
 
-Märk väl, du som klickar på länken: samma stil har inte använts på alla sidor, så luta dig bak med bra stöd för nacken för att undvika whiplash.
+Märk väl, du som klickar på länken: samma stil har inte använts på alla sidor, så luta dig bak med bra stöd för nacken för att undvika whiplash ∑(O_O;)
