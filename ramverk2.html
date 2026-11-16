@@ -13,19 +13,20 @@
     <nav id="navbar">
       <ul>
         <li><a href="index.html" class="tab">Hem</a></li>
-        <li><a href="ramverk1.html" class="tab">Ramverk 1</a></li>
-        <li><a href="ramverk2.html" class="tab active">Ramverk 2</a></li>
+        <li><a href="ramverk1.html" class="tab">Bootstrap</a></li>
+        <li><a href="ramverk2.html" class="tab active">Milligram</a></li>
         <li><a href="publish.html" class="tab">Publicering</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1 class="text-3xl font-bold underline">Ramverk 2: Milligram</h1>
-    <p>Denna sida har använt Milligram som ramverk. Dokumentation finns på : <a
-        href="https://milligram.io/#getting-started" target="_blank">Milligram Documentation</a></p>
-        <p>Viss extra SCSS har använts för att göra sidan mer användbar/tilltalande.</p>
     <section>
+      <h1 class="text-3xl font-bold underline">Ramverk 2: Milligram</h1>
+      <p>Denna sida har använt Milligram som ramverk. Dokumentation finns på : <a
+          href="https://milligram.io/#getting-started" target="_blank">Milligram Documentation</a></p>
+      <p>Viss extra SCSS har använts för att göra sidan mer användbar/tilltalande.</p>
+      
       <div class="container milli">
         <div class="row milli">
           <div class="column pos">
@@ -33,11 +34,13 @@
             <ul>
               <li>Väldigt enkelt att använda: bara börja skriva HTML efter att Milligram har blivit inkluderat i
                 projektet.</li>
-              <li>Om man inte vill behöver man inte använda någon specifik CSS då färdig css finns när man börjar
-                programmera.</li>
+              <li>Milligram innehåller färdig CSS, men det är fullt möjligt att komplettera med egen CSS utan större
+                problem.</li>
               <li>Då ramverket är flexbox-baserad är det enkelt att skapa responsiva layouter.</li>
               <li>Även grid är enkelt att implementera och använda. Dessa för- och nackdelar är uppdelade med hjälp av
                 en container, en row samt två kolumner.</li>
+              <li>Flera sätt att installera; jag använde npm, men det går att använda bower och yarn också. Den som vill
+                kan även ladda ner Milligram manuellt och inkludera dem i projektet.</li>
             </ul>
           </div>
 
@@ -47,7 +50,11 @@
               <li>Det finns inga mer avancerade funktioner än de som redan finns. Så inga karuseller, dragspel eller
                 navigeringsmenyer finns färdiga att implementera.</li>
               <li>Det verkar uppdateras långsamt (senaste uppdateringen var 2020)</li>
-              <li>Vill man styla får man använda css för att manuellt göra detta (t.ex. ändra färg, animationer, rundade hörn)</li>
+              <li>Vill man styla får man använda css för att manuellt göra detta (t.ex. ändra färg, animationer, rundade
+                hörn)</li>
+              <li>Ibland kan regler krocka. Då Milligram innehåller färdiga stylingregler för olika HTML-element så kan
+                egen CSS påverka eller påverkas. Det kan ibland leda till att sidan beter sig konstigt och vara svårt
+                att felsöka.</li>
             </ul>
           </div>
         </div>
@@ -55,7 +62,7 @@
     </section>
 
     <section class="table-section">
-      <h2>Tabell</h2>
+      <h3>Tabell</h3>
       <table class="milligram-table">
         <thead>
           <tr>
@@ -118,8 +125,9 @@
         </tbody>
       </table>
     </section>
+
     <section style="padding:0 4rem;">
-      <h2>Formulär</h2>
+      <h3>Formulär</h3>
       <form style="padding:2rem; border:1px solid #ccc; border-radius:10px; margin-top:1rem;">
         <fieldset>
           <div>
