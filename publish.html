@@ -13,8 +13,8 @@
     <nav class="nav-no-framework">
       <ul>
         <li><a href="index.html">Hem</a></li>
-        <li><a href="ramverk1.html">Ramverk 1</a></li>
-        <li><a href="ramverk2.html">Ramverk 2</a></li>
+        <li><a href="ramverk1.html">Bootstrap</a></li>
+        <li><a href="ramverk2.html">Milligram</a></li>
         <li><a href="publish.html" class="active">Publicering</a></li>
       </ul>
     </nav>
@@ -22,9 +22,9 @@
 
   <main>
     <h1>Publicering på Netlify</h1>
-    <p>Jag har valt att publicera denna webbplats till Netlify. Framförallt för att jag har använt den tidigare och
-      därmed känner till den lite bättre än andra. Men även för att öva mer med den då jag hittills har mest använt
-      GitHub Pages.</p>
+    <p>Jag har valt att publicera denna webbplats till Netlify. Framförallt för att jag har använt den ett par gånger tidigare,
+      men också för att vänja mig vid den ytterligare då jag tidigare främst använt GitHub Pages för publicering.
+    </p>
 
     <div class="publish-container">
       <div class="column">
@@ -67,13 +67,18 @@
       </div>
     </div>
 
-    <ul>
-      <li>Ta med saker som kod-stöd (vilka programmerings-språk som går att använda),</li>
-      <li>kostnad,</li>
-      <li>för- och nackdelar</li>
-      <li>och andra saker du tycker är utmärkande.</li>
-      <li>Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</li>
-    </ul>
+    <h3>Arbetssättet</h3>
+    <p>Du arbetar lokalt med ditt projekt: du programmerar, felhanterar och så vidare tills du känner dig redo att spara nuvarande version hos exempelvis GitHub.</p>
+    <p>Via GitHub kan man versionshantera projektet och spara ändringar samt pusha nya filer till projektets repository.</p>
+    <p>Koppla ditt GitHub konto till Netlify (exempelvis genom att logga in på Netlify med GitHub konto). Väl inne där kan man välja om man vill publicera en webbplats:
+      i detta fall kan man bland annat ange eventuella bygginställningar samt vad man vill att webbplatsen ska heta. Netlify kontrollerar så namnet inte redan är taget.</p>
+      <p>När kopplingen är klar och webbplatsen fungerar (inga fel som gör att exempelvis länkar inte fungerar som planerat) så håller Netlify GitHub-repot under bevakning. 
+        Detta innebär att varje gång nya ändringar pushas till den gren som projektet publiceras från så hämtar Netlify de nya/uppdaterade filerna och uppdaterar webbplatsen
+        automatiskt.
+      </p>
+      <p>När publiceringen är avklarad kan man lätt kontrollera den webbplatsen via en publik URL som skapas. Man får även publiceringsloggar som kan visa om något har gått fel, så man 
+        får bättre återkoppling den vägen i stället för att behöva gissa sig fram.
+      </p>
 
   </main>
 
